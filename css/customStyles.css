@@ -25,6 +25,7 @@ html {
     overflow: hidden;
     background-image: url(Images/background1.jpg);
     background-size: cover;
+    z-index: -2;
     
 }
 
