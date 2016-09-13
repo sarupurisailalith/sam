@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head> 
-	<link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/materialize.min.css" rel="stylesheet">
+    <link href="css/customStyles.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 500px)" href="css/lessthan500.css">
 	<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
     </script>
 	<title> SAMIM RIZVI </title>
 </head>
-
 <body> 
-    <div id="container">
-            <div id="main-header">
-            <header> 
-                <div id="title"><h1> Samim Rizvi </h1></div>
-                <ul class="topnav" id="myTopnav">
+    <header></header>
+    <div class="navbar-fixed">
+        <nav style="background-color: gray">
+            <div class="nav-wrapper">
+                <a href="Index.html" class ="brand-logo" style="font-family:'Great Vibes'">Samim Rizvi</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
                     <li><a href="#"> About Me </a></li>
-                    <li><a href="#"> Contact </a></li>
-                    <li><a href="#"> Coaching </a></li>
+                    <li><a href="#"> Races </a></li>
+                    <li><a href="#"> Training </a></li>
                     <li><a href="#"> Videos </a></li>
                     <li><a href="#"> Articles </a></li>
-                    <li><a href="#"> Training </a></li>
-                    <li><a href="#"> Races </a> </li>
-                    <li class="icon">
-                        <a href="javascript:void(0);" onclick="collapseMenu()">&#9776;</a>
-                    </li>
+                    <li><a href="#"> Coaching </a></li>
+                    <li><a href="#"> Contact </a> </li>
                 </ul>
-            </header>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="#"> About Me </a></li>
+                    <li><a href="#"> Races </a></li>
+                    <li><a href="#"> Training </a></li>
+                    <li><a href="#"> Videos </a></li>
+                    <li><a href="#"> Articles </a></li>
+                    <li><a href="#"> Coaching </a></li>
+                    <li><a href="#"> Contact </a> </li>
+                </ul>
             </div>
-        <!--<div id="pc1"></div> -->
-        <div id="main-body">
-            <div id="landing">
-                <div id="landing-container">
-
-                </div>
+        </nav>
+    </div>
+    <div id="index-main-body">
+        <main>
+            <div id="main-quote">
+                <p>
+                    “It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better. The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming; but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself in a worthy cause; who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, at least fails while daring greatly, so that his place shall never be with those cold and timid souls who neither know victory nor defeat.”
+                </p><br>
             </div>
-            <div id="contact"></div>
-            <div id="coaching"></div>
-            <div id="videos"></div>
-            <div id="articles"></div>
-            <div id="training"></div>
-            <div id="races"></div>
-            <div id="about"></div>
-        </div>
-        
+        </main>
     </div>
     <script>
+        $( document ).ready(function(){
+            $(".button-collapse").sideNav();
+        })
         function collapseMenu() {
             var x = document.getElementById("myTopnav");
             if (x.className === "topnav") {
@@ -59,7 +66,6 @@
         });
 
     </script>
-    
 </body>
 
 </html>
